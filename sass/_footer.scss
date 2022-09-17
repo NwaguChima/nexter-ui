@@ -2,6 +2,10 @@
   background-color: $color-secondary;
   grid-column: full-start / full-end;
   padding: 8rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 4rem;
+  }
 }
 
 .nav {
@@ -11,6 +15,10 @@
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2rem;
   align-items: center;
+
+  @media only screen and (max-width: $bp-small) {
+    gap: 1rem;
+  }
 
   &__link:link,
   &__link:visited {
@@ -49,4 +57,8 @@
   margin-left: auto;
   text-align: center;
   width: 70%;
+
+  @media only screen and (max-width: $bp-small) {
+    margin-top: 4rem;
+  }
 }
